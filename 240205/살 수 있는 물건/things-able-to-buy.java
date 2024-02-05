@@ -8,7 +8,7 @@ public class Main {
         if (n>=3000) {
             answer = "book";
         }
-        else if (n<3000) {
+        else if (n<3000 && n<=1000) {
             answer = "mask";
         }
         else {
