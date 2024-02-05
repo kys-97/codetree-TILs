@@ -8,7 +8,7 @@ public class Main {
             System.out.println("pass");
         }
         else {
-            System.out.println((80-score)+"more score");
+            System.out.println((80-score)+" more score");
         }
     }
 }
