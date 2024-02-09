@@ -6,13 +6,13 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        if (a < 90) {
+        if ((a<90) || (b < 90)) {
             System.out.println(0);
         }
-        else if (a >= 95) {
+        else if ((a<90)&&(b >= 95)) {
             System.out.println(100000);
         }
-        else if ((a>=90) && (a<95)) {
+        else if ((a<90)&&((b>=90) && (b<95))) {
             System.out.println(50000);
         }
     }
