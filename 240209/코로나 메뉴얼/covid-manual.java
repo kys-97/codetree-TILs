@@ -13,18 +13,7 @@ public class Main {
         int c1 = sc.nextInt();
 
         if (((a.equals("Y"))&&(b.equals("Y")))||((a.equals("Y"))&&(c.equals("Y")))||((b.equals("Y"))&&(c.equals("Y")))||(a.equals("Y"))&&(b.equals("Y"))&&(c.equals("Y"))) {
-            if ((a1>=37)&&(b1>=37)) {
                 System.out.println("E");
-            }
-            if (((b1>=37)&&(c1>=37))) {
-                System.out.println("E");
-            }
-            if (((a1>=37)&&(c1>=37))) {
-                System.out.println("E");
-            }
-            if (((a1 >= 37)&&(b1>=37)&&(c1>=37))) {
-                System.out.println("E");
-            }
         }
         else {
             System.out.println("N");
