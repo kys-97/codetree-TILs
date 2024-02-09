@@ -8,7 +8,7 @@ public class Main {
             System.out.println("YES");
         }
         else {
-            Sytem.out.println("NO");
+            System.out.println("NO");
         }
 
         if (a%5 == 0) {
