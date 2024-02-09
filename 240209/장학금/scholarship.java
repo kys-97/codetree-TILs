@@ -9,10 +9,10 @@ public class Main {
         if ((a<90) || (b < 90)) {
             System.out.println(0);
         }
-        else if ((a<90)&&(b >= 95)) {
+        else if ((a>=90)&&(b >= 95)) {
             System.out.println(100000);
         }
-        else if ((a<90)&&((b>=90) && (b<95))) {
+        else if ((a>=90)&&((b>=90) && (b<95))) {
             System.out.println(50000);
         }
     }
