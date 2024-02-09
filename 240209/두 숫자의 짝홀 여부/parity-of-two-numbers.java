@@ -10,14 +10,14 @@ public class Main {
             System.out.println("even");
         }
         else {
-            System.out.println("odd")
+            System.out.println("odd");
         }
 
         if (b % 2 == 0) {
             System.out.println("even");
         }
         else {
-            System.out.println("odd")
+            System.out.println("odd");
         }
     }
 }
