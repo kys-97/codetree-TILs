@@ -9,9 +9,9 @@ public class Main {
             System.out.println("true");
             if(y%100 == 0) {
                 System.out.println("false");
-                if (y%400 == 0) {
-                    System.out.println("true");
-                }
+            }
+            if((y%100==0)&&(y%400==0)){
+                System.out.println("true");
             }
         }
         else {
