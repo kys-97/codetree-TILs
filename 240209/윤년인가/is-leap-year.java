@@ -10,9 +10,6 @@ public class Main {
             if(y%100 == 0) {
                 System.out.println("false");
             }
-            if((y%100==0)&&(y%400==0)){
-                System.out.println("true");
-            }
         }
         else {
             System.out.println("false");
