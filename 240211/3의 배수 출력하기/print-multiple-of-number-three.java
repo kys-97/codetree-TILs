@@ -6,8 +6,10 @@ public class Main {
         int n = sc.nextInt();
         int i = 1;
         while(i <= n) {
+           if (i%3 == 0) {
             System.out.print(i+" ");
-            i*=3;
+           }
+           i++;
         }
     }
 }
