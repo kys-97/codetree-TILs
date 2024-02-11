@@ -6,10 +6,14 @@ public class Main {
         int n = sc.nextInt();
         int result1 = 0;
         int result2 =0;
+
 		for(int i = 1; i <= n; i++) {
 			result1 = i%10;
-            result2 = i/10;
-			if (i%3 ==0 || result1 % 3 == 0 && result2 % 3 == 0) {
+			result2 = i/10;
+			if (i % 3 == 0 || result1 % 3 == 0) {
+				System.out.print(0+" ");
+			}
+			else if (result2 == 3 || result2 == 6 || result2 == 9) {
 				System.out.print(0+" ");
 			}
 			else {
