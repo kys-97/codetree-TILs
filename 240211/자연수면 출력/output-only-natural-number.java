@@ -11,7 +11,7 @@ public class Main {
                 System.out.print(a);
             }
         }
-        else if (a < 0) {
+        else if (a <= 0) {
             System.out.print(0);
         }
     }
