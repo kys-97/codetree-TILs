@@ -7,7 +7,7 @@ public class Main {
         int b = sc.nextInt();
 
         for(int i = b; i>=a; i--) {
-            System.out.print(b+" ");
+            System.out.print(i+" ");
         }
     }
 }
