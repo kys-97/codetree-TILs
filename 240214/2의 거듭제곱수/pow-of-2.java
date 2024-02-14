@@ -13,9 +13,10 @@ public class Main {
             x++;
             exp *=2;
             if(exp == n) {
+                System.out.println(x);
                 break;
             }
         }
-        System.out.println(x);
+        
     }
 }
