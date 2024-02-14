@@ -11,7 +11,7 @@ public class Main {
         while(true) {
             x*=2;
             cnt++;
-            if(x == 2) {
+            if(x == n) {
                 break;
             }
         }
