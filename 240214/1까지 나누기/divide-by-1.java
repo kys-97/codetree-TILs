@@ -12,7 +12,7 @@ public class Main {
        for(int i = 1; i<=n; i++) {
         d/=(double)i;
         cnt++;
-        if(d<=1) {
+        if(d<1) {
             break;
         }
        }
