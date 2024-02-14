@@ -4,21 +4,25 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int cnt = 0;
         boolean flag = false;
 
-        for(int i = 0; i<=n; i++) {
-             if(i!=1 && i%n == 0 ) {
-                flag = true;
-             }
-             else {
-                flag = false;
-             }
+        for(int i = 1; i<=n; i++) {
+            if(n%i == 0 && n > 1) {
+                cnt++;
+                if(cnt > 3) {
+                    flag = true;
+                }
+            }
         }
+
         if(flag == true) {
-            System.out.print("C");
+            System.out.println("C");
         }
         else {
-            System.out.print("N");
+            System.out.println("N");
         }
+
+      
     }
 }
