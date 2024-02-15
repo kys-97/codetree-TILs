@@ -8,8 +8,9 @@ public class Main {
         int c = sc.nextInt();
         boolean flag = false;
 
-        for(int i = a; i <= b; i++) {
-            if(c%i==0) {
+        //a 이상 b 이하에 c의 배수가 없다면 yes
+        for(int i = a; i<=b; i++) {
+            if(i%c != 0) {
                 flag = true;
             }
         }
@@ -17,7 +18,7 @@ public class Main {
         if(flag == true) {
             System.out.println("YES");
         }
-        else{
+        else {
             System.out.println("NO");
         }
     }
