@@ -10,7 +10,7 @@ public class Main {
         for(int i = 1; i<=n; i++) {
             if(n%i == 0 && n > 1) {
                 cnt++;
-                if(cnt > 3) {
+                if(cnt > 2) {
                     flag = true;
                 }
             }
