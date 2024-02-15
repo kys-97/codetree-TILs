@@ -10,7 +10,7 @@ public class Main {
 
         //a 이상 b 이하에 c의 배수가 없다면 yes
         for(int i = a; i<=b; i++) {
-            if(i%c != 0) {
+            if(c%i != 0) {
                 flag = true;
             }
         }
