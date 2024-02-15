@@ -6,17 +6,17 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        boolean flag = false;
+        boolean flag = true;
 
        //a이상 b이하
        for(int i = a; i<=b; i++) {
         //c의 배수가 없다면 yes
         if(i%c==0) {
-            flag = true;
+            flag = false;
         }
        }
 
-       if(flag = true) {
+       if(flag = false) {
         System.out.println("NO");
        }
        else {
