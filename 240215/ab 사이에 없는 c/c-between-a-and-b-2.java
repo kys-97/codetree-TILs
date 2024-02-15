@@ -8,18 +8,19 @@ public class Main {
         int c = sc.nextInt();
         boolean flag = false;
 
-        //a 이상 b 이하에 c의 배수가 없다면 yes
-        for(int i = a; i<=b; i++) {
-            if(c%i != 0) {
-                flag = true;
-            }
+       //a이상 b이하
+       for(int i = a; i<=b; i++) {
+        //c의 배수가 없다면 yes
+        if(i%c==0) {
+            flag = true;
         }
+       }
 
-        if(flag == true) {
-            System.out.println("YES");
-        }
-        else {
-            System.out.println("NO");
-        }
+       if(flag = true) {
+        System.out.println("NO");
+       }
+       else {
+        System.out.println("YES");
+       }
     }
 }
