@@ -19,7 +19,7 @@ public class Main {
             cnt++;
             sum += a[i];
         }
-        avg = sum/cnt;
+        avg = Math.floor((sum/cnt)*100)/100.0;
         System.out.print(sum+" "+avg);
 
     }
