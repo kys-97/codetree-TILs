@@ -19,8 +19,9 @@ public class Main {
             cnt++;
             sum += a[i];
         }
-        avg = Math.floor((sum/cnt)*10)/10.0;
-        System.out.print(sum+" "+avg);
+        avg = sum/cnt;
+        String str = String.format("%.1f", avg);
+        System.out.print(sum+" "+str);
 
     }
 }
