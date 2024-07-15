@@ -17,17 +17,18 @@ public class Main {
 
         //print number
         int cnt = 0;
-        int [] answer;
         for (int i = 0; i < n.length; i++) {
             if (n[i] == 0) {
+                break;
+            } if (n[i] != 0) {
                 cnt++;
-                answer = new int[cnt];
             }
         }
 
-        System.out.println(Arrays.toString(n));
-        System.out.println(cnt);
-        System.out.println(Arrays.toString(answer));
+        for (int i = cnt-1; i >= 0; i--) {
+            System.out.print(n[i]+" ");
+        }
+        
         sc.close();
     }
 }
