@@ -8,7 +8,7 @@ public class Main {
 
         if (right >= 1.0 && left >= 1.0) {
             System.out.print("H");
-        } else if (right >= 0.5 || left >= 0.5) {
+        } else if (right >= 0.5 && left >= 0.5) {
             System.out.print("M");
         } else {
             System.out.print("L");
