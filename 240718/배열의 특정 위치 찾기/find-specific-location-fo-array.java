@@ -7,18 +7,20 @@ public class Main {
 
         int sum = 0;
         double avg = 0;
+        double sum2 = 0;
         double cnt = 0;
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
             if (i%2 == 1) {
                 sum += arr[i];
-            } else if (i%2 == 0) {
+            } if ((i+1)%3 == 0) {
                 cnt++;
+                sum2 += arr[i];
             }
         }
 
-        avg = sum/cnt;
+        avg = sum2/cnt;
         String str = String.format("%.1f", avg);
         System.out.println(sum+" "+str);
 
