@@ -10,9 +10,9 @@ public class Main {
             arr[i] = sc.nextInt();
             if (arr[i] != 0) {
                 if (arr[i]%2 == 1) {
-                    arr[i] += 3;
+                    arr[i] = arr[i]+3;
                 } else if (arr[i]%2 == 0) {
-                    arr[i] /= 2;
+                    arr[i] = arr[i]/2;
                 }
                 System.out.print(arr[i]+" ");
             }
