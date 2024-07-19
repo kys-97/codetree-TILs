@@ -9,7 +9,7 @@ public class Main {
         while (sc.hasNextInt()) {
             arr[i] = sc.nextInt();
             if (arr[i] != 0) {
-                if (arr[i]%2 != 0) {
+                if (arr[i]%2 == 1) {
                     arr[i] += 3;
                 } else if (arr[i]%2 == 0) {
                     arr[i] /= 2;
@@ -17,5 +17,7 @@ public class Main {
                 System.out.print(arr[i]+" ");
             }
         }
+
+        sc.close();
     }
 }
