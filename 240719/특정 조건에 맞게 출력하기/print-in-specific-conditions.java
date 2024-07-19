@@ -6,15 +6,17 @@ public class Main {
         int i = 0;
         int [] arr = new int [100];
         
-        while (sc.hasNextInt()) {
+        while (sc.hasNext()) {
             arr[i] = sc.nextInt();
             if (arr[i] != 0) {
                 if (arr[i]%2 == 1) {
-                    arr[i] = arr[i]+3;
+                    arr[i] += 3;
                 } else if (arr[i]%2 == 0) {
-                    arr[i] = arr[i]/2;
+                    arr[i] /= 2;
                 }
                 System.out.print(arr[i]+" ");
+            } else if (arr[i] == 0) {
+                break;
             }
         }
 
