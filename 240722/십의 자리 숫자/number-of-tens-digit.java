@@ -13,11 +13,11 @@ public class Main {
         for (int i = 1; i < 10; i++) {
             int cnt = 0;
             for (int j = 0; j < arr.size(); j++) {
-                if (arr.get(j)/10 == i) {
+                if (arr.get(j) == 0) {
+                    break;
+                }
+                else if (arr.get(j)/10 == i) {
                     cnt++;
-                    if (arr.get(j) == 0) {
-                        break;
-                    }
                 }
             }
             System.out.println(i+" - "+cnt);
