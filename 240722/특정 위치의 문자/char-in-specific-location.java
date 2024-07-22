@@ -15,7 +15,7 @@ public class Main {
             }
         }
 
-        if (!charData.contain(c)) {
+        if (!charData.contains(c)) {
             System.out.print("None");
         }
 
