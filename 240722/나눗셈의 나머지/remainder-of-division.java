@@ -11,6 +11,9 @@ public class Main {
             int remainder = a % b;
             arr.add(remainder);
             a /= b;
+            if (a <= 1) {
+                break;
+            }
         }
 
         // map to store the count of remainders
