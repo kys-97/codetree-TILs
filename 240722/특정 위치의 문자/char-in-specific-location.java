@@ -9,15 +9,21 @@ public class Main {
         char c = sc.next().charAt(0);
         //boolean
         boolean flag = false;
+        //result
+        int result = 0;
         
         for (int i = 0; i < charData.length; i++) {
             if (charData[i] == c) {
                 flag = true;
-                System.out.print(i);
+                result = i;
+            } else {
+
             }
         }
 
-        if (flag = false) {
+        if (flag = true) {
+            System.out.print(result);
+        } else {
             System.out.print("None");
         }
 
