@@ -12,12 +12,12 @@ public class Main {
             if (charData[i] == c) {
                 System.out.print(i);
                 break;
-            } else {
-                System.out.print("None");
-
             }
         }
 
+        if (!charData.contain(c)) {
+            System.out.print("None");
+        }
 
 
         sc.close();
