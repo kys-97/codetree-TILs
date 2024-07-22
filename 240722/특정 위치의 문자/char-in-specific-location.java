@@ -21,7 +21,7 @@ public class Main {
             }
         }
 
-        if (flag = true) {
+        if (flag) {
             System.out.print(result);
         } else {
             System.out.print("None");
