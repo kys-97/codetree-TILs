@@ -7,15 +7,17 @@ public class Main {
         char [] charData = {'L', 'E', 'B', 'R', 'O', 'S'};
         //read text
         char c = sc.next().charAt(0);
+        //boolean
+        boolean flag = false;
         
         for (int i = 0; i < charData.length; i++) {
             if (charData[i] == c) {
+                flag = true;
                 System.out.print(i);
-                break;
             }
         }
 
-        if (!charData.contains(c)) {
+        if (flag = false) {
             System.out.print("None");
         }
 
