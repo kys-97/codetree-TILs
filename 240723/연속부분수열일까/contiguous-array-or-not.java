@@ -10,7 +10,7 @@ public class Main {
         int [] a = new int [n1];
         int [] b = new int [n2];
 
-        int cnt = 0;
+        boolean flag = false;
 
         for (int i = 0; i < n1; i++) {
             a[i] = sc.nextInt();
@@ -24,15 +24,17 @@ public class Main {
             for (int j = 0; j < n2; j++) {
                 if (a[i] == b[j]) {
                    if (a[i+1] == b[j+1]) {
-                     System.out.println("Yes");
+                     flag = true;
+                   } else {
+                    flag = false;
                    }
-                } else {
-                    cnt++;
-                }
+                } 
             }
         }
 
-        if (cnt != 0) {
+        if (flag) {
+            System.out.println("Yes");
+        } else {
             System.out.println("No");
         }
 
