@@ -21,14 +21,16 @@ public class Main {
         }
 
         for (int i = 0; i < n1-n2; i++) {
+            boolean match = false;
             for (int j = 0; j < n2; j++) {
-                if (a[i] == b[j]) {
-                   if (a[i+1] == b[j+1]) {
-                     flag = true;
-                   } else {
-                    flag = false;
-                   }
-                } 
+                   if (a[i+j] != b[j]) {
+                     match = true;
+                }
+            }
+
+            if (match) {
+                flag = true;
+                break;
             }
         }
 
