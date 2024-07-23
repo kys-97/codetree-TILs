@@ -2,7 +2,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
-        Scanner sc = new Scanner (System.in);
+        Scanner sc = new Scanner(System.in);
+
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
 
@@ -22,19 +23,20 @@ public class Main {
         for (int i = 0; i < n1-n2; i++) {
             for (int j = 0; j < n2; j++) {
                 if (a[i] == b[j]) {
-                    if (a[i+1] == b[j+1]) {
-                        cnt++;
-                    }
+                   if (a[i+1] == b[j+1]) {
+                     System.out.println("Yes");
+                   }
+                } else {
+                    cnt++;
                 }
             }
         }
 
         if (cnt != 0) {
-            System.out.print("Yes");
-        } else {
-            System.out.print("No");
+            System.out.println("No");
         }
 
         sc.close();
+
     }
 }
