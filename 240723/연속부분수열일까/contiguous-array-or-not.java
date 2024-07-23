@@ -1,16 +1,13 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
 
-        int [] a = new int [n1];
-        int [] b = new int [n2];
-
-        boolean flag = false;
+        int[] a = new int[n1];
+        int[] b = new int[n2];
 
         for (int i = 0; i < n1; i++) {
             a[i] = sc.nextInt();
@@ -20,27 +17,28 @@ public class Main {
             b[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < n1-n2; i++) {
-            boolean match = false;
+        boolean isSubsequence = false;
+
+        for (int i = 0; i <= n1 - n2; i++) {
+            boolean match = true;
             for (int j = 0; j < n2; j++) {
-                   if (a[i+j] != b[j]) {
-                     match = true;
+                if (a[i + j] != b[j]) {
+                    match = false;
+                    break;
                 }
             }
-
             if (match) {
-                flag = true;
+                isSubsequence = true;
                 break;
             }
         }
 
-        if (flag) {
+        if (isSubsequence) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
         }
 
         sc.close();
-
     }
 }
