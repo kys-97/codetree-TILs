@@ -20,10 +20,15 @@ public class Main {
         }
 
         for (int i = 0; i < arr.size(); i++) {
+            if (arr.get(i) > max) {
+                max = arr.get(i);
+            }
+            min = max;
+        }
+
+        for(int i = 0; i < arr.size(); i++) {
             if (arr.get(i) < min) {
                 min = arr.get(i);
-            } else if (arr.get(i) > max) {
-                max = arr.get(i);
             }
         }
 
