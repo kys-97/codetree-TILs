@@ -28,5 +28,7 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
         printM(n,m);
+
+        sc.close();
     }
 }
